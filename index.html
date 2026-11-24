@@ -1,0 +1,1319 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高跟踩踏 - 视频品牌_原创影像社区与专业内容平台</title>
+<meta name="description" content="高跟踩踏官方网站，专注高跟鞋文化与足部美学影像的原创视频品牌社区，汇聚优质创作者与高清原创内容，持续运营，值得信赖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23262a36'/%3E%3Cpath d='M20 46c0-10 4-18 8-24 2 6 2 10 6 14 6 6 10 6 10 10H20z' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --gts-ink:#1d1f27;
+  --gts-ink-2:#2a2d3a;
+  --gts-amber:#e8b04b;
+  --gts-amber-deep:#c98d24;
+  --gts-paper:#f7f3ec;
+  --gts-cream:#fffaf2;
+  --gts-line:#e4dccd;
+  --gts-muted:#6f6a60;
+  --gts-shadow:0 12px 32px rgba(45,38,24,.10);
+  --gts-radius:14px;
+  --gts-head:132px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  color:var(--gts-ink);
+  background:var(--gts-paper);
+  line-height:1.75;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.35}
+p{margin:0 0 14px}
+ul,ol{margin:0;padding-left:1.2em}
+.gts-container{width:min(1180px,92vw);margin:0 auto}
+.gts-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ============ 公告 + 页头 吸顶 ============ */
+.gts-topbar{
+  position:sticky;top:0;z-index:80;
+  background:var(--gts-ink);
+  color:#f3e9d6;
+  border-bottom:1px solid #3a3d4c;
+}
+.gts-newsbar{
+  display:flex;align-items:center;gap:14px;
+  padding:8px 0;font-size:13.5px;
+  overflow:hidden;
+}
+.gts-newsbar-tag{
+  flex:none;
+  background:var(--gts-amber);color:#2a230f;
+  font-weight:700;letter-spacing:.06em;
+  padding:2px 10px;border-radius:999px;font-size:12px;
+}
+.gts-newsbar-track{flex:1;min-width:0;overflow:hidden;position:relative;height:24px}
+.gts-newsbar-list{
+  display:flex;gap:40px;padding:0;margin:0;list-style:none;
+  position:absolute;white-space:nowrap;
+  animation:gts-marquee 34s linear infinite;
+}
+.gts-newsbar-list li{white-space:nowrap;opacity:.92}
+.gts-newsbar-list li b{color:var(--gts-amber);font-weight:600}
+@keyframes gts-marquee{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+@media (prefers-reduced-motion:reduce){
+  .gts-newsbar-list{animation:none;position:static;flex-wrap:wrap}
+  .gts-newsbar-track{height:auto}
+  html{scroll-behavior:auto}
+}
+.gts-header{padding:14px 0;background:rgba(29,31,39,.97);backdrop-filter:blur(6px)}
+.gts-header-inner{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.gts-brand{display:flex;align-items:center;gap:12px;flex:none}
+.gts-brand-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(140deg,#e8b04b,#c98d24);
+  display:grid;place-items:center;
+  color:#241d0e;font-weight:800;font-size:19px;
+}
+.gts-brand-text{display:flex;flex-direction:column;line-height:1.25}
+.gts-brand-name{font-size:19px;font-weight:800;color:#fff;letter-spacing:.04em}
+.gts-brand-sub{font-size:11.5px;color:#a9a392;letter-spacing:.16em}
+.gts-nav{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.gts-nav a{
+  color:#ddd6c6;font-size:14.5px;padding:7px 13px;border-radius:999px;
+  transition:background .2s,color .2s;
+}
+.gts-nav a:hover,.gts-nav a:focus-visible{background:#333747;color:#fff;outline:none}
+.gts-search{
+  display:flex;align-items:center;gap:6px;
+  background:#2c2f3c;border:1px solid #42465a;border-radius:999px;
+  padding:4px 6px 4px 14px;
+}
+.gts-search input{
+  border:0;background:transparent;color:#f1ecdf;font-size:14px;width:150px;outline:none;
+}
+.gts-search input::placeholder{color:#8b8677}
+.gts-search button{
+  border:0;background:var(--gts-amber);color:#2a230f;font-weight:700;
+  border-radius:999px;padding:5px 14px;font-size:13px;
+}
+.gts-burger{
+  display:none;margin-left:auto;
+  background:#2c2f3c;color:#f1ecdf;border:1px solid #42465a;
+  border-radius:10px;padding:8px 12px;font-size:16px;
+}
+.gts-search-feedback{
+  width:100%;font-size:13px;color:var(--gts-amber);
+  min-height:0;transition:.2s;
+}
+.gts-search-feedback:not(:empty){padding:6px 2px 0}
+
+/* ============ 首屏 ============ */
+.gts-hero{padding:52px 0 60px;background:
+  radial-gradient(120% 90% at 88% 8%,#3b3020 0%,transparent 58%),
+  linear-gradient(170deg,#252833 0%,#1a1c24 100%);
+  color:#f4efe4;
+}
+.gts-hero-grid{display:grid;grid-template-columns:5fr 5fr;gap:46px;align-items:center}
+.gts-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:.18em;color:var(--gts-amber);
+  border:1px solid #4a4736;border-radius:999px;padding:5px 14px;margin-bottom:20px;
+}
+.gts-hero h1{
+  font-size:clamp(38px,6vw,66px);font-weight:800;letter-spacing:.02em;
+  color:#fff;margin-bottom:8px;
+}
+.gts-hero-en{
+  font-size:13px;letter-spacing:.34em;color:#8f8a79;text-transform:uppercase;margin-bottom:20px;
+}
+.gts-hero-lead{font-size:16.5px;color:#cfc8b6;max-width:40em;margin-bottom:20px}
+.gts-hero-intro{
+  font-size:14.6px;color:#a8a293;border-left:2px solid var(--gts-amber);
+  padding-left:16px;margin-bottom:26px;
+}
+.gts-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:28px}
+.gts-stat{
+  background:#2b2f3c;border:1px solid #3d4152;border-radius:var(--gts-radius);
+  padding:14px 14px 12px;
+}
+.gts-stat b{display:block;font-size:24px;color:var(--gts-amber);line-height:1.2;font-weight:800}
+.gts-stat span{font-size:12.5px;color:#a29c8b}
+.gts-hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.gts-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  border-radius:999px;padding:11px 22px;font-size:14.5px;font-weight:700;
+  border:1px solid transparent;transition:transform .18s,background .2s,color .2s;
+}
+.gts-btn:active{transform:translateY(1px)}
+.gts-btn-primary{background:var(--gts-amber);color:#2a230f}
+.gts-btn-primary:hover{background:#f0bd66}
+.gts-btn-ghost{border-color:#585d72;color:#e7e1d2}
+.gts-btn-ghost:hover{background:#333747}
+.gts-hero-visual{position:relative}
+.gts-hero-visual .gts-hero-frame{
+  border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45);
+  border:1px solid #454a5d;
+}
+.gts-hero-visual img{width:100%;aspect-ratio:4/3.2;object-fit:cover}
+.gts-hero-badge{
+  position:absolute;bottom:-18px;left:-12px;
+  background:var(--gts-cream);color:#2a230f;border-radius:12px;
+  padding:12px 18px;font-size:13px;font-weight:700;
+  box-shadow:var(--gts-shadow);max-width:230px;line-height:1.5;
+}
+.gts-hero-badge small{display:block;font-weight:400;color:#7a7466;font-size:11.5px;margin-top:2px}
+
+/* ============ 通用 section ============ */
+.gts-section{padding:64px 0}
+.gts-section-alt{background:var(--gts-cream);border-top:1px solid var(--gts-line);border-bottom:1px solid var(--gts-line)}
+.gts-section-dark{background:var(--gts-ink-2);color:#eee8da}
+.gts-head{margin-bottom:34px;max-width:48em}
+.gts-head h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;letter-spacing:.01em;margin-bottom:10px}
+.gts-head p{color:var(--gts-muted);font-size:14.6px}
+.gts-section-dark .gts-head p{color:#a8a293}
+.gts-eyebrow{
+  font-size:12px;letter-spacing:.22em;color:var(--gts-amber-deep);
+  font-weight:700;margin-bottom:8px;text-transform:uppercase;
+}
+.gts-section-dark .gts-eyebrow{color:var(--gts-amber)}
+
+/* ============ 视频区 ============ */
+.gts-video-feature{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:34px;align-items:start;margin-bottom:34px}
+.gts-video-cover{border-radius:var(--gts-radius);overflow:hidden;position:relative;box-shadow:var(--gts-shadow);border:1px solid var(--gts-line)}
+.gts-video-cover img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.gts-video-cover .gts-play{
+  position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(0deg,rgba(20,20,26,.42),rgba(20,20,26,.06));
+}
+.gts-play span{
+  width:64px;height:64px;border-radius:50%;background:rgba(255,250,242,.94);
+  display:grid;place-items:center;color:#1d1f27;font-size:20px;padding-left:4px;
+  box-shadow:0 8px 22px rgba(0,0,0,.3);
+}
+.gts-video-main-title{font-size:23px;font-weight:800;margin:14px 0 8px}
+.gts-video-main-meta{font-size:13px;color:var(--gts-muted);margin-bottom:12px}
+.gts-tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.gts-tag{
+  font-size:12px;background:#f0e7d6;color:#7a5a15;border-radius:999px;padding:3px 11px;
+  border:1px solid #e2d3b6;
+}
+.gts-section-dark .gts-tag{background:#3a3f52;color:#e4c988;border-color:#4c5268}
+.gts-video-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+.gts-video-item{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;
+  padding:15px 4px;border-bottom:1px dashed var(--gts-line);
+}
+.gts-section-dark .gts-video-item{border-color:#41465a}
+.gts-video-item:hover{background:rgba(232,176,75,.06)}
+.gts-video-num{font-size:13px;font-weight:800;color:var(--gts-amber-deep);width:26px}
+.gts-video-item h3{font-size:15.8px;font-weight:700;margin-bottom:3px}
+.gts-video-item p{font-size:13px;color:var(--gts-muted);margin:0}
+.gts-section-dark .gts-video-item p{color:#a09a8a}
+.gts-video-actions{display:flex;gap:6px;align-items:center}
+.gts-icon-btn{
+  border:1px solid var(--gts-line);background:transparent;border-radius:8px;
+  padding:4px 9px;font-size:12.5px;color:#5e594e;line-height:1.5;
+  display:inline-flex;align-items:center;gap:4px;transition:.18s;
+}
+.gts-section-dark .gts-icon-btn{border-color:#4a4f63;color:#cfc8b6}
+.gts-icon-btn:hover{border-color:var(--gts-amber);color:var(--gts-amber-deep)}
+.gts-icon-btn.gts-is-active{background:var(--gts-amber);border-color:var(--gts-amber);color:#2a230f}
+.gts-icon-btn.gts-saved{color:#c2410c;border-color:#e2a17a}
+
+/* ============ 图文索引 ============ */
+.gts-index-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.gts-index-card{
+  background:#fff;border:1px solid var(--gts-line);border-radius:var(--gts-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;
+}
+.gts-index-card:hover{transform:translateY(-3px);box-shadow:var(--gts-shadow)}
+.gts-index-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.gts-index-body{padding:16px 18px 18px}
+.gts-index-body h3{font-size:17px;margin-bottom:7px}
+.gts-index-body p{font-size:13.6px;color:var(--gts-muted);margin-bottom:10px}
+.gts-index-meta{font-size:12px;color:#8b8577}
+
+/* ============ 专题 ============ */
+.gts-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.gts-topic{
+  background:#fff;border:1px solid var(--gts-line);border-radius:var(--gts-radius);
+  padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;
+}
+.gts-topic h3{font-size:17.5px}
+.gts-topic .gts-status{
+  align-self:flex-start;font-size:11.5px;font-weight:700;letter-spacing:.06em;
+  background:#f3e6c9;color:#8a5f0a;border-radius:999px;padding:2px 10px;
+}
+.gts-topic ol{padding-left:1.1em;margin:4px 0 0;font-size:13.6px;color:#4d4a43}
+.gts-topic ol li{margin-bottom:5px}
+.gts-topic p{font-size:13.6px;color:var(--gts-muted);margin:0}
+
+/* ============ 作者区 双列简介 ============ */
+.gts-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.gts-author{
+  background:#fff;border:1px solid var(--gts-line);border-radius:var(--gts-radius);
+  padding:20px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;
+}
+.gts-avatar{
+  width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:21px;color:#2a230f;flex:none;
+}
+.gts-avatar-a{background:linear-gradient(135deg,#f3cf87,#e2a83c)}
+.gts-avatar-b{background:linear-gradient(135deg,#c8d6e0,#8fa9bd)}
+.gts-avatar-c{background:linear-gradient(135deg,#e6c6c0,#c9887c)}
+.gts-avatar-d{background:linear-gradient(135deg,#cddcc6,#8dab83)}
+.gts-avatar-e{background:linear-gradient(135deg,#d8cbe6,#a68cc4)}
+.gts-avatar-f{background:linear-gradient(135deg,#e9d7b6,#c2a266)}
+.gts-author h3{font-size:17px;margin-bottom:3px}
+.gts-author .gts-author-field{font-size:12.5px;color:var(--gts-amber-deep);font-weight:700;letter-spacing:.04em;margin-bottom:6px}
+.gts-author p{font-size:13.6px;color:var(--gts-muted);margin-bottom:10px}
+.gts-author-stats{font-size:12.5px;color:#7c766a;display:flex;gap:14px;margin-bottom:10px}
+.gts-author-stats b{color:var(--gts-ink);font-weight:700}
+.gts-link-btn{
+  border:0;background:transparent;color:var(--gts-amber-deep);
+  font-size:13px;font-weight:700;padding:0;
+}
+.gts-link-btn:hover{text-decoration:underline}
+
+/* ============ 榜单 / 评论 ============ */
+.gts-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.gts-review{
+  background:#fff;border:1px solid var(--gts-line);border-radius:var(--gts-radius);
+  padding:18px 20px;display:flex;flex-direction:column;gap:8px;
+}
+.gts-review-top{display:flex;align-items:center;gap:10px;font-size:13px;color:#7b7569}
+.gts-review-top b{color:var(--gts-ink);font-size:13.6px}
+.gts-review p{font-size:14.2px;margin:0;color:#43403a}
+.gts-review-star{color:var(--gts-amber-deep);letter-spacing:2px;font-size:13px}
+.gts-score-panel{
+  grid-column:1/-1;background:var(--gts-ink-2);color:#efe8d9;
+  border-radius:var(--gts-radius);padding:22px 24px;
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:24px;align-items:center;
+}
+.gts-score-panel .gts-big-score{font-size:44px;font-weight:800;color:var(--gts-amber);line-height:1}
+.gts-score-panel .gts-big-score small{display:block;font-size:12px;font-weight:400;color:#a8a293;margin-top:4px}
+.gts-bar{height:8px;background:#3d4256;border-radius:999px;overflow:hidden;margin:5px 0 10px}
+.gts-bar span{display:block;height:100%;background:linear-gradient(90deg,#e8b04b,#f1cd86)}
+.gts-score-panel p{font-size:13.4px;color:#b9b3a4;margin:0}
+
+/* ============ FAQ ============ */
+.gts-faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 22px;align-items:start}
+.gts-faq details{
+  background:#fff;border:1px solid var(--gts-line);border-radius:12px;
+  padding:14px 18px;
+}
+.gts-faq summary{
+  cursor:pointer;font-weight:700;font-size:15px;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:flex-start;
+}
+.gts-faq summary::-webkit-details-marker{display:none}
+.gts-faq summary::after{content:"+";color:var(--gts-amber-deep);font-weight:800;font-size:18px;line-height:1.2}
+.gts-faq details[open] summary::after{content:"–"}
+.gts-faq details p{font-size:13.8px;color:var(--gts-muted);margin:10px 0 0}
+
+/* ============ 企业动态 / 合作 ============ */
+.gts-news-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2px}
+.gts-news-list li{
+  display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;
+  padding:16px 2px;border-bottom:1px dashed var(--gts-line);font-size:14.4px;
+}
+.gts-news-list time{font-size:12.5px;color:var(--gts-amber-deep);font-weight:700}
+.gts-partner-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.gts-partner{
+  border:1px dashed #cbbfa6;border-radius:12px;padding:16px;
+  text-align:center;font-weight:700;font-size:14.5px;color:#5f5a4e;background:#fffdf8;
+}
+.gts-partner small{display:block;font-weight:400;font-size:11.5px;color:#8b8577;margin-top:4px;letter-spacing:.04em}
+
+/* ============ 品牌解析长文 ============ */
+.gts-essay{max-width:58em}
+.gts-essay h3{font-size:19px;margin:30px 0 10px;padding-left:12px;border-left:3px solid var(--gts-amber)}
+.gts-essay h3:first-child{margin-top:0}
+.gts-essay p{font-size:15px;color:#413e38;text-align:justify}
+.gts-essay .gts-quote{
+  background:#fff;border:1px solid var(--gts-line);border-left:4px solid var(--gts-amber-deep);
+  border-radius:10px;padding:16px 20px;font-size:14.4px;color:#55504a;margin:20px 0;
+}
+
+/* ============ 页脚 ============ */
+.gts-footer{background:#15171e;color:#a8a293;padding:52px 0 26px;font-size:13.6px}
+.gts-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+.gts-footer h4{color:#f1ecdf;font-size:15px;margin-bottom:12px;font-weight:700}
+.gts-footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.gts-footer a:hover{color:var(--gts-amber)}
+.gts-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.gts-footer-brand .gts-brand-mark{width:36px;height:36px;font-size:16px;border-radius:10px}
+.gts-footer-brand b{color:#f1ecdf;font-size:16.5px;letter-spacing:.04em}
+.gts-footer-bottom{
+  border-top:1px solid #2e313d;padding-top:18px;
+  display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:12.6px;color:#7f7a6d;
+}
+
+/* ============ 浮动按钮 / Toast / 弹窗 ============ */
+.gts-float{position:fixed;right:22px;bottom:26px;z-index:70;display:flex;flex-direction:column;gap:10px}
+.gts-float button{
+  width:46px;height:46px;border-radius:50%;border:1px solid #d8cdb7;
+  background:var(--gts-cream);color:#3a3630;font-size:15px;font-weight:700;
+  box-shadow:0 8px 20px rgba(40,34,22,.18);display:grid;place-items:center;
+}
+.gts-float button:hover{background:var(--gts-amber);border-color:var(--gts-amber);color:#2a230f}
+.gts-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#1d1f27;color:#f5efe1;border-radius:10px;padding:11px 20px;
+  font-size:14px;box-shadow:0 14px 34px rgba(0,0,0,.32);
+  opacity:0;pointer-events:none;transition:.25s;z-index:120;
+}
+.gts-toast.gts-toast-show{opacity:1;transform:translate(-50%,0)}
+.gts-modal{
+  position:fixed;inset:0;z-index:110;display:none;place-items:center;
+  background:rgba(20,20,26,.55);padding:20px;
+}
+.gts-modal.gts-modal-open{display:grid}
+.gts-modal-card{
+  background:var(--gts-cream);border-radius:16px;max-width:520px;width:100%;
+  padding:26px 26px 22px;box-shadow:0 30px 70px rgba(0,0,0,.4);position:relative;
+  max-height:86vh;overflow:auto;
+}
+.gts-modal-card h3{font-size:20px;margin-bottom:10px;padding-right:30px}
+.gts-modal-card p,.gts-modal-card li{font-size:14.2px;color:#4f4b44}
+.gts-modal-close{
+  position:absolute;top:14px;right:14px;border:1px solid var(--gts-line);
+  background:#fff;border-radius:8px;width:30px;height:30px;font-size:15px;line-height:1;
+  color:#5e594e;
+}
+.gts-modal-share{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.gts-modal-share button{
+  border:1px solid var(--gts-line);background:#fff;border-radius:999px;
+  padding:7px 16px;font-size:13.5px;color:#4a463f;
+}
+.gts-modal-share button:hover{border-color:var(--gts-amber);color:var(--gts-amber-deep)}
+.gts-form-row{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.gts-form-row label{font-size:13px;font-weight:700;color:#4f4b44}
+.gts-form-row input,.gts-form-row textarea{
+  border:1px solid var(--gts-line);border-radius:9px;padding:9px 12px;font-size:14px;
+  font-family:inherit;background:#fff;color:#2f2c27;outline:none;
+}
+.gts-form-row input:focus,.gts-form-row textarea:focus{border-color:var(--gts-amber-deep)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1000px){
+  .gts-hero-grid{grid-template-columns:1fr;gap:34px}
+  .gts-video-feature{grid-template-columns:1fr}
+  .gts-index-grid,.gts-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gts-footer-grid{grid-template-columns:1fr 1fr}
+  .gts-partner-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gts-score-panel{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .gts-nav{
+    display:none;width:100%;flex-direction:column;gap:2px;
+    background:#242733;border-radius:12px;padding:10px;margin-top:12px;
+  }
+  .gts-nav.gts-nav-open{display:flex}
+  .gts-nav a{padding:9px 12px}
+  .gts-burger{display:block}
+  .gts-search{order:3;width:100%}
+  .gts-search input{flex:1;width:auto}
+  .gts-author-grid,.gts-review-grid,.gts-index-grid,.gts-topic-grid,.gts-faq,.gts-partner-row{
+    grid-template-columns:1fr;
+  }
+  .gts-stats{grid-template-columns:1fr}
+  .gts-section{padding:46px 0}
+  .gts-footer-grid{grid-template-columns:1fr}
+  .gts-video-item{grid-template-columns:auto minmax(0,1fr);row-gap:8px}
+  .gts-video-actions{grid-column:2}
+  .gts-news-list li{grid-template-columns:1fr;gap:4px}
+  .gts-hero-badge{position:static;margin-top:14px;max-width:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="gts-topbar">
+  <div class="gts-newsbar gts-container">
+    <span class="gts-newsbar-tag">最新发布</span>
+    <div class="gts-newsbar-track">
+      <ul class="gts-newsbar-list">
+        <li><b>11·22</b> 冬季高跟鞋结构特辑上线，共 8 集，含跟型拆解与步态实录</li>
+        <li><b>11·18</b> 高跟踩踏创作者扶持计划开放报名，首批 40 个名额</li>
+        <li><b>11·12</b> 官方高清素材库更新 126 段慢镜素材，支持正版授权下载</li>
+        <li><b>11·05</b> 城市足音企划第二季开播，走进六座城市的鞋楦工坊</li>
+        <li><b>11·22</b> 冬季高跟鞋结构特辑上线，共 8 集，含跟型拆解与步态实录</li>
+        <li><b>11·18</b> 高跟踩踏创作者扶持计划开放报名，首批 40 个名额</li>
+        <li><b>11·12</b> 官方高清素材库更新 126 段慢镜素材，支持正版授权下载</li>
+        <li><b>11·05</b> 城市足音企划第二季开播，走进六座城市的鞋楦工坊</li>
+      </ul>
+    </div>
+  </div>
+  <header class="gts-header">
+    <div class="gts-container">
+      <div class="gts-header-inner">
+        <a class="gts-brand" href="#gts-top" aria-label="高跟踩踏官方网站首页">
+          <span class="gts-brand-mark">踩</span>
+          <span class="gts-brand-text">
+            <span class="gts-brand-name">高跟踩踏</span>
+            <span class="gts-brand-sub">GAOGEN CAITA · OFFICIAL</span>
+          </span>
+        </a>
+        <button class="gts-burger" id="gts-burger" aria-expanded="false" aria-controls="gts-nav">导航菜单</button>
+        <nav class="gts-nav" id="gts-nav" aria-label="主导航">
+          <a href="#gts-focus">焦点内容</a>
+          <a href="#gts-videos">视频频道</a>
+          <a href="#gts-topics">专题企划</a>
+          <a href="#gts-authors">创作者</a>
+          <a href="#gts-review">口碑评价</a>
+          <a href="#gts-brandstory">品牌解析</a>
+          <a href="#gts-faq">帮助中心</a>
+        </nav>
+        <div class="gts-search" role="search">
+          <label class="gts-sr" for="gts-search-input">搜索视频内容</label>
+          <input id="gts-search-input" type="search" placeholder="搜索跟型、步态、鞋楦…" autocomplete="off">
+          <button type="button" id="gts-search-btn">搜索</button>
+        </div>
+      </div>
+      <div class="gts-search-feedback" id="gts-search-feedback" aria-live="polite"></div>
+    </div>
+  </header>
+</div>
+
+<main id="gts-top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="gts-hero" aria-labelledby="gts-hero-title">
+    <div class="gts-container">
+      <div class="gts-hero-grid">
+        <div>
+          <span class="gts-hero-kicker">官方网站 · 原创正版高清影像</span>
+          <h1 id="gts-hero-title">高跟踩踏</h1>
+          <p class="gts-hero-en">Heel · Step · Presence</p>
+          <p class="gts-hero-lead">以脚步为镜头，记录高跟鞋的身体语言与空间回响。高跟踩踏是企业级视频品牌，深耕足部美学与行走影像这一垂直领域。</p>
+          <p class="gts-hero-intro">高跟踩踏官方网站是面向创作者与品牌的高品质视频内容平台。我们围绕高跟鞋文化、步态结构、鞋楦工艺与城市行走故事持续运营原创节目，搭建从拍摄、剪辑到正版素材授权的完整内容生态，以专业与匠心服务每一位用户。</p>
+          <div class="gts-stats">
+            <div class="gts-stat"><b data-gts-count="2680">0</b><span>原创高清视频（条）</span></div>
+            <div class="gts-stat"><b data-gts-count="416">0</b><span>认证创作者（位）</span></div>
+            <div class="gts-stat"><b data-gts-count="97">0</b><span>内容好评率（%）</span></div>
+          </div>
+          <div class="gts-hero-actions">
+            <a class="gts-btn gts-btn-primary" href="#gts-videos">进入视频频道</a>
+            <a class="gts-btn gts-btn-ghost" href="#gts-authors">认识创作者</a>
+            <button class="gts-btn gts-btn-ghost" type="button" data-gts-open="submit">我要投稿</button>
+          </div>
+        </div>
+        <div class="gts-hero-visual">
+          <div class="gts-hero-frame">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 640'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232c2f3d'/%3E%3Cstop offset='1' stop-color='%23171a21'/%3E%3C/linearGradient%3E%3ClinearGradient id='heel' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23e8b04b'/%3E%3Cstop offset='1' stop-color='%23a9741a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='640' fill='url(%23bg)'/%3E%3Ccircle cx='620' cy='130' r='180' fill='%23e8b04b' opacity='0.10'/%3E%3Ccircle cx='180' cy='520' r='220' fill='%23e8b04b' opacity='0.06'/%3E%3Cpath d='M250 470c10-60 40-110 92-150 44-34 92-58 132-96 22-21 34-46 40-74 6 44 0 84-20 120-26 48-70 78-104 112-40 40-56 78-58 128z' fill='url(%23heel)' opacity='0.92'/%3E%3Cpath d='M282 470h186l-12 26H288z' fill='%23f0d6a1' opacity='0.85'/%3E%3Crect x='330' y='300' width='26' height='140' rx='13' fill='%23f0d6a1' opacity='0.75'/%3E%3Cpath d='M96 566h608' stroke='%23515a70' stroke-width='2' stroke-dasharray='10 12'/%3E%3Cg fill='%23f3e9d6' opacity='0.55' font-family='sans-serif' font-size='18'%3E%3Ctext x='96' y='96'%3E01 / STEP TRACE%3C/text%3E%3C/g%3E%3C/svg%3E" alt="高跟踩踏品牌主视觉：深色空间中金色高跟鞋侧影与步态轨迹线" width="800" height="640">
+          </div>
+          <div class="gts-hero-badge">
+            冬季结构特辑 · 已上线
+            <small>8 集跟型拆解 + 步态实录</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 + 视频频道 -->
+  <section class="gts-section" id="gts-focus" aria-labelledby="gts-focus-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Focus / 焦点</p>
+        <h2 id="gts-focus-title">高跟踩踏焦点内容：本周最值得完整看完的三支片</h2>
+        <p>由官方编辑部与企业创作者共同选片，覆盖结构拆解、城市行走与幕后记录三类方向，所有片源均为正版高清。</p>
+      </div>
+
+      <div class="gts-video-feature">
+        <article>
+          <div class="gts-video-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233d4356'/%3E%3Cstop offset='1' stop-color='%231c1f28'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23a)'/%3E%3Cg stroke='%23e8b04b' stroke-width='3' fill='none' opacity='0.8'%3E%3Cpath d='M120 360c60-20 90-70 110-120s40-90 90-110'/%3E%3Cpath d='M180 372c50-30 80-80 96-130s38-76 84-96'/%3E%3C/g%3E%3Cg fill='%23f3e9d6' opacity='0.9'%3E%3Crect x='470' y='120' width='16' height='170' rx='8'/%3E%3Cpath d='M430 290h120l-10 34H440z'/%3E%3C/g%3E%3Ctext x='470' y='82' fill='%23e8b04b' font-family='sans-serif' font-size='20'%3ESTILETTO 90mm%3C/text%3E%3Ctext x='470' y='380' fill='%23b9b3a4' font-family='sans-serif' font-size='16'%3E跟型结构 · 重心位移%3C/text%3E%3C/svg%3E" alt="细跟高跟鞋跟型结构拆解视频封面，画面标注90毫米细跟与重心位移轨迹" width="800" height="450">
+            <div class="gts-play" aria-hidden="true"><span>▶</span></div>
+          </div>
+          <h3 class="gts-video-main-title">90 毫米细跟的重心革命：一双鞋如何改变走路姿态</h3>
+          <p class="gts-video-main-meta">高跟踩踏官方出品 · 时长 18:42 · 2026-11-20 发布</p>
+          <p>从鞋楦弧度、跟柱直径到掌垫倾角，我们拆开一双 90 毫米细跟，用四台机位记录重心在脚掌上的位移过程，并给出三种日常可用的落地方式。</p>
+          <div class="gts-tags">
+            <span class="gts-tag">结构拆解</span>
+            <span class="gts-tag">步态实录</span>
+            <span class="gts-tag">官方发布</span>
+          </div>
+          <div class="gts-video-actions">
+            <button class="gts-icon-btn" type="button" data-gts-like>♡ 点赞 <b>1,284</b></button>
+            <button class="gts-icon-btn" type="button" data-gts-save>☆ 收藏</button>
+            <button class="gts-icon-btn" type="button" data-gts-share>↗ 分享</button>
+          </div>
+        </article>
+
+        <div>
+          <h3 style="font-size:18px;margin-bottom:6px">同期焦点 · 文字摘要</h3>
+          <ul class="gts-video-list">
+            <li class="gts-video-item">
+              <span class="gts-video-num">01</span>
+              <div>
+                <h3>雨夜石板路上的声音：一场关于跟底材质的听觉实验</h3>
+                <p>六种跟底材质 × 四种地面，录下真实踏步声，附完整收音参数。</p>
+              </div>
+              <div class="gts-video-actions">
+                <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>962</b></button>
+                <button class="gts-icon-btn" type="button" data-gts-save>☆</button>
+              </div>
+            </li>
+            <li class="gts-video-item">
+              <span class="gts-video-num">02</span>
+              <div>
+                <h3>鞋楦工坊的一天：从木模到成鞋的十七道工序</h3>
+                <p>走进老工坊，看老师傅如何用手掌判断楦头弧度是否合格。</p>
+              </div>
+              <div class="gts-video-actions">
+                <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>1,431</b></button>
+                <button class="gts-icon-btn" type="button" data-gts-save>☆</button>
+              </div>
+            </li>
+            <li class="gts-video-item">
+              <span class="gts-video-num">03</span>
+              <div>
+                <h3>第一次穿高跟鞋的人：三十分钟跟拍与真实反应</h3>
+                <p>不剪掉摔倒的片段，记录身体从抗拒到适应的完整过程。</p>
+              </div>
+              <div class="gts-video-actions">
+                <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>2,077</b></button>
+                <button class="gts-icon-btn" type="button" data-gts-save>☆</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M3 视频频道：文字列表（单列图文列表） -->
+  <section class="gts-section gts-section-alt" id="gts-videos" aria-labelledby="gts-videos-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Channel / 频道</p>
+        <h2 id="gts-videos-title">高跟踩踏视频频道：更新的每一条都可检索、可收藏</h2>
+        <p>频道坚持原创与正版，所有条目均标注作者、播放与互动数据，方便你按兴趣筛选。</p>
+      </div>
+      <ul class="gts-video-list">
+        <li class="gts-video-item">
+          <span class="gts-video-num">01</span>
+          <div>
+            <h3>八厘米方跟的上班一百天：通勤实穿记录</h3>
+            <p>连续记录一百个工作日，统计磨脚位置、疲劳时间与更换鞋垫节点。作者：楦下有声 · 播放 42.6 万。</p>
+          </div>
+          <div class="gts-video-actions">
+            <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>3,218</b></button>
+            <button class="gts-icon-btn" type="button" data-gts-save>☆ 收藏</button>
+            <button class="gts-icon-btn" type="button" data-gts-share>↗</button>
+          </div>
+        </li>
+        <li class="gts-video-item">
+          <span class="gts-video-num">02</span>
+          <div>
+            <h3>如何用一盏灯拍出脚步声：单人拍摄布光教学</h3>
+            <p>从收音角度到快门速度，讲清低照度环境下的踏步特写怎么拍。作者：城南机位 · 播放 28.1 万。</p>
+          </div>
+          <div class="gts-video-actions">
+            <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>1,876</b></button>
+            <button class="gts-icon-btn" type="button" data-gts-save>☆ 收藏</button>
+            <button class="gts-icon-btn" type="button" data-gts-share>↗</button>
+          </div>
+        </li>
+        <li class="gts-video-item">
+          <span class="gts-video-num">03</span>
+          <div>
+            <h3>码头上的一百级台阶：城市足音 · 沿海篇</h3>
+            <p>在潮湿石阶上测试抓地与防滑，沿途收录码头搬运工的脚步声。作者：步幅档案 · 播放 36.9 万。</p>
+          </div>
+          <div class="gts-video-actions">
+            <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>2,504</b></button>
+            <button class="gts-icon-btn" type="button" data-gts-save>☆ 收藏</button>
+            <button class="gts-icon-btn" type="button" data-gts-share>↗</button>
+          </div>
+        </li>
+        <li class="gts-video-item">
+          <span class="gts-video-num">04</span>
+          <div>
+            <h3>旧鞋新生：一次合法合规的跟底改造全过程</h3>
+            <p>从拆底、配材到打磨，四十道工序的缩时记录，附工具清单。作者：北地匠作 · 播放 19.4 万。</p>
+          </div>
+          <div class="gts-video-actions">
+            <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>1,129</b></button>
+            <button class="gts-icon-btn" type="button" data-gts-save>☆ 收藏</button>
+            <button class="gts-icon-btn" type="button" data-gts-share>↗</button>
+          </div>
+        </li>
+        <li class="gts-video-item">
+          <span class="gts-video-num">05</span>
+          <div>
+            <h3>她说：三位舞者的高跟鞋与身体记忆</h3>
+            <p>访谈与排练片段交织，讨论鞋与职业、疼痛与表达的关系。作者：拾影人 · 播放 51.2 万。</p>
+          </div>
+          <div class="gts-video-actions">
+            <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>4,017</b></button>
+            <button class="gts-icon-btn" type="button" data-gts-save>☆ 收藏</button>
+            <button class="gts-icon-btn" type="button" data-gts-share>↗</button>
+          </div>
+        </li>
+        <li class="gts-video-item">
+          <span class="gts-video-num">06</span>
+          <div>
+            <h3>雪后第一双靴：冬季抓地与保暖实测</h3>
+            <p>三种跟型在结冰路面上的表现对照，含温控数据与防滑评级。作者：楦下有声 · 播放 33.7 万。</p>
+          </div>
+          <div class="gts-video-actions">
+            <button class="gts-icon-btn" type="button" data-gts-like>♡ <b>2,881</b></button>
+            <button class="gts-icon-btn" type="button" data-gts-save>☆ 收藏</button>
+            <button class="gts-icon-btn" type="button" data-gts-share>↗</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 + M7 图文索引 -->
+  <section class="gts-section" id="gts-topics" aria-labelledby="gts-topics-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Series / 专题</p>
+        <h2 id="gts-topics-title">专题企划：把高跟鞋拆成可以慢慢看的三条线</h2>
+        <p>高跟踩踏的专题由编辑部与创作者联合策划，每个专题保持更新，并在页内提供完整条目索引。</p>
+      </div>
+      <div class="gts-topic-grid">
+        <article class="gts-topic">
+          <span class="gts-status">更新中 · 第 8 期</span>
+          <h3>冬季结构特辑</h3>
+          <p>从跟柱、掌垫到鞋面受力，用冬季实穿场景检验结构设计是否合理。</p>
+          <ol>
+            <li>细跟与方跟在低温环境下的稳定性对照</li>
+            <li>雪地行走的落地角度与重心调节</li>
+            <li>保暖内衬对鞋内空间的影响实测</li>
+          </ol>
+        </article>
+        <article class="gts-topic">
+          <span class="gts-status">已完结 · 全 6 集</span>
+          <h3>城市足音第二季</h3>
+          <p>走进六座城市，记录不同地面材质上的脚步声与在地行人的故事。</p>
+          <ol>
+            <li>沿海码头：潮湿石阶上的抓地实验</li>
+            <li>老城巷弄：青石板与木地板的声学差异</li>
+            <li>深夜天桥：城市噪音中的脚步辨识</li>
+          </ol>
+        </article>
+        <article class="gts-topic">
+          <span class="gts-status">筹备中 · 征集选题</span>
+          <h3>鞋楦匠人档案</h3>
+          <p>以人物访谈为主线，记录鞋楦师傅、修鞋匠与跟底工艺师的手上功夫。</p>
+          <ol>
+            <li>一位老师傅的四十年楦头笔记</li>
+            <li>修鞋摊上的工具进化史</li>
+            <li>年轻工艺师如何重做经典跟型</li>
+          </ol>
+        </article>
+      </div>
+
+      <div class="gts-index-grid" style="margin-top:34px">
+        <article class="gts-index-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23efe4cf'/%3E%3Cg stroke='%23b98f3b' stroke-width='2' fill='none'%3E%3Cpath d='M60 300h520'/%3E%3Cpath d='M110 300V170l70-40 70 40v130'/%3E%3Cpath d='M390 300V150l60-34 60 34v150'/%3E%3C/g%3E%3Ccircle cx='180' cy='120' r='34' fill='%23e8b04b' opacity='0.7'/%3E%3Ctext x='60' y='70' fill='%238a5f0a' font-family='sans-serif' font-size='22'%3E地面与脚步%3C/text%3E%3C/svg%3E" alt="图文索引封面：不同地面材质与高跟鞋踏步的对照示意图" width="640" height="360">
+          <div class="gts-index-body">
+            <h3>地面材质对照表：六种路面怎么选跟底</h3>
+            <p>把公园砖、青石、沥青、木地板、地毯与湿滑石板放在一起比较，给出可直接照着用的选底建议。</p>
+            <span class="gts-index-meta">攻略 · 阅读 2.4 万 · 官方编辑部</span>
+          </div>
+        </article>
+        <article class="gts-index-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232b2e3b'/%3E%3Cg fill='%23e8b04b' opacity='0.85'%3E%3Crect x='150' y='110' width='22' height='170' rx='11'/%3E%3Crect x='220' y='140' width='16' height='140' rx='8'/%3E%3Crect x='285' y='90' width='26' height='190' rx='13'/%3E%3Crect x='370' y='150' width='14' height='130' rx='7'/%3E%3Crect x='430' y='120' width='20' height='160' rx='10'/%3E%3C/g%3E%3Ctext x='150' y='70' fill='%23f3e9d6' font-family='sans-serif' font-size='22'%3E跟型家族%3C/text%3E%3C/svg%3E" alt="图文索引封面：五种常见高跟鞋跟型剪影排布在深色背景上" width="640" height="360">
+          <div class="gts-index-body">
+            <h3>跟型家族图谱：细跟、方跟、猫跟与坡跟的差别</h3>
+            <p>从受力面积、稳定性与视觉比例三个维度做横向比较，适合第一次系统了解跟型的人。</p>
+            <span class="gts-index-meta">知识科普 · 阅读 3.1 万 · 楦下有声</span>
+          </div>
+        </article>
+        <article class="gts-index-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23dfe6ea'/%3E%3Cg stroke='%235f7482' stroke-width='3' fill='none'%3E%3Ccircle cx='320' cy='180' r='96'/%3E%3Ccircle cx='320' cy='180' r='60' stroke-dasharray='8 10'/%3E%3C/g%3E%3Cpath d='M320 84v40M320 236v40M224 180h40M416 180h40' stroke='%235f7482' stroke-width='3'/%3E%3Ccircle cx='320' cy='180' r='14' fill='%23e8b04b'/%3E%3Ctext x='60' y='70' fill='%233c4a53' font-family='sans-serif' font-size='22'%3E步态取景%3C/text%3E%3C/svg%3E" alt="图文索引封面：步态取景的机位与角度示意圆形图" width="640" height="360">
+          <div class="gts-index-body">
+            <h3>步态取景的五个机位：把走路拍出节奏感</h3>
+            <p>低机位、侧向跟拍、正面缓推、地面贴拍与俯拍，逐一说明适用场景与常见失误。</p>
+            <span class="gts-index-meta">教程干货 · 阅读 1.9 万 · 城南机位</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵（双列简介） -->
+  <section class="gts-section gts-section-alt" id="gts-authors" aria-labelledby="gts-authors-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Creators / 创作者</p>
+        <h2 id="gts-authors-title">高跟踩踏创作者矩阵：一群把脚步当语言的人</h2>
+        <p>平台持续运营创作者扶持计划，以下六位为认证作者，作品均为原创或已获正版授权。</p>
+      </div>
+      <div class="gts-author-grid">
+        <article class="gts-author">
+          <span class="gts-avatar gts-avatar-a">楦</span>
+          <div>
+            <h3>楦下有声</h3>
+            <p class="gts-author-field">结构拆解 · 实穿测评</p>
+            <p>鞋楦工程师出身，做了九年跟型结构分析。习惯把一双鞋拆开再讲话，镜头里常有游标卡尺和手绘剖面图，擅长把专业术语讲成普通人能听懂的日常经验。</p>
+            <div class="gts-author-stats"><span>作品 <b>186</b></span><span>粉丝 <b>12.4 万</b></span></div>
+            <button class="gts-link-btn" type="button" data-gts-author="楦下有声|结构拆解与实穿测评|186|12.4 万|鞋楦工程师出身，九年跟型结构分析经验，擅长拆解鞋体结构与真实穿着数据，作品以清晰的图解和可复用的方法著称。">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="gts-author">
+          <span class="gts-avatar gts-avatar-b">步</span>
+          <div>
+            <h3>步幅档案</h3>
+            <p class="gts-author-field">城市探索 · 在地文化</p>
+            <p>纪录片方向创作者，长期拍城市里的行走现场。喜欢在早市、码头和旧巷子里蹲一整天，只为录一段没有杂音的脚步，作品节奏慢但信息密度高。</p>
+            <div class="gts-author-stats"><span>作品 <b>124</b></span><span>粉丝 <b>9.7 万</b></span></div>
+            <button class="gts-link-btn" type="button" data-gts-author="步幅档案|城市探索与在地文化|124|9.7 万|纪录片方向创作者，长期拍摄城市行走现场，擅长在真实环境中采集脚步声音与在地故事，节奏克制、细节丰富。">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="gts-author">
+          <span class="gts-avatar gts-avatar-c">拾</span>
+          <div>
+            <h3>拾影人</h3>
+            <p class="gts-author-field">人物访谈 · 情感故事</p>
+            <p>做过六年人物记者，现在把访谈搬进镜头。擅长让对方在安静的环境里讲出真实感受，剪辑上保留呼吸与停顿，认为沉默也是内容的一部分。</p>
+            <div class="gts-author-stats"><span>作品 <b>98</b></span><span>粉丝 <b>15.2 万</b></span></div>
+            <button class="gts-link-btn" type="button" data-gts-author="拾影人|人物访谈与情感故事|98|15.2 万|前人物记者，擅长深度访谈与情绪捕捉，作品保留真实的停顿与呼吸感，关注身体经验与职业记忆。">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="gts-author">
+          <span class="gts-avatar gts-avatar-d">匠</span>
+          <div>
+            <h3>北地匠作</h3>
+            <p class="gts-author-field">手作DIY · 工艺记录</p>
+            <p>修鞋铺第三代，一边守店一边拍工序。镜头对准的是锤子、砂纸和胶水，讲的是怎么把一双旧鞋修回能穿的状态，实用、耐看、不夸张。</p>
+            <div class="gts-author-stats"><span>作品 <b>142</b></span><span>粉丝 <b>8.3 万</b></span></div>
+            <button class="gts-link-btn" type="button" data-gts-author="北地匠作|手作工艺与旧鞋改造|142|8.3 万|修鞋铺第三代传人，以工序记录见长，视频中完整呈现拆底、配材、打磨等步骤，注重可操作性与安全性。">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="gts-author">
+          <span class="gts-avatar gts-avatar-e">南</span>
+          <div>
+            <h3>城南机位</h3>
+            <p class="gts-author-field">创作幕后 · 拍摄教学</p>
+            <p>商业摄影指导，专攻小空间与低照度拍摄。最喜欢用一盏灯解决问题，课程里会给完整的参数表和失败案例，不藏私，也常提醒设备之外的观察力。</p>
+            <div class="gts-author-stats"><span>作品 <b>76</b></span><span>粉丝 <b>6.9 万</b></span></div>
+            <button class="gts-link-btn" type="button" data-gts-author="城南机位|拍摄教学与创作幕后|76|6.9 万|商业摄影指导，擅长低照度与小空间拍摄，教学内容附完整参数与失败案例，强调观察力优先于设备。">查看作者档案 →</button>
+          </div>
+        </article>
+        <article class="gts-author">
+          <span class="gts-avatar gts-avatar-f">声</span>
+          <div>
+            <h3>雨里收音</h3>
+            <p class="gts-author-field">声音设计 · 治愈影像</p>
+            <p>声音设计师，收集城市里的各种脚步声。雨天、楼梯间、木地板都是常去的录音地点，作品安静，适合夜晚戴耳机看，评论区常有人说听着就放松了。</p>
+            <div class="gts-author-stats"><span>作品 <b>63</b></span><span>粉丝 <b>5.4 万</b></span></div>
+            <button class="gts-link-btn" type="button" data-gts-author="雨里收音|声音设计与治愈影像|63|5.4 万|声音设计师，专注采集城市脚步与环境声，作品以听觉体验为核心，重视收音设备与后期处理的完整呈现。">查看作者档案 →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 口碑评价（双列短评 + 评分摘要） -->
+  <section class="gts-section" id="gts-review" aria-labelledby="gts-review-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Voices / 口碑</p>
+        <h2 id="gts-review-title">用户口碑：来自社区的真实评价与评分摘要</h2>
+        <p>以下评价来自平台注册用户与创作者，语气与关注点各不相同，我们完整保留。</p>
+      </div>
+      <div class="gts-review-grid">
+        <div class="gts-score-panel">
+          <div class="gts-big-score">4.8<small>综合评分 / 5.0</small></div>
+          <div>
+            <div class="gts-bar"><span style="width:92%"></span></div>
+            <p>内容专业度 4.9 · 画面品质 4.8 · 社区氛围 4.7 · 更新稳定度 4.8（基于 3,412 条有效评价统计）</p>
+          </div>
+          <div style="font-size:13px;color:#a8a293">近 30 天<br>新增评价 268 条</div>
+        </div>
+
+        <article class="gts-review">
+          <div class="gts-review-top"><b>林一舟</b><span>· 实穿三年</span><span class="gts-review-star">★★★★★</span></div>
+          <p>最开始只是想找双能上班穿的鞋，结果把结构拆解那几集全看完了。现在买鞋会先看跟柱直径和掌垫倾角，踩坑少了很多，这是我在别处没见过的讲法。</p>
+        </article>
+        <article class="gts-review">
+          <div class="gts-review-top"><b>阿柘</b><span>· 摄影爱好者</span><span class="gts-review-star">★★★★★</span></div>
+          <p>城南机位那期低照度拍摄讲得很实在，参数全给了，我照着拍了一次楼梯间的脚步特写，居然一次过。缺点是想看的机位合集还不够多，希望多更。</p>
+        </article>
+        <article class="gts-review">
+          <div class="gts-review-top"><b>许棠</b><span>· 刚入社区</span><span class="gts-review-star">★★★★☆</span></div>
+          <p>界面干净，找东西很快。就是有些专题条目藏得深，要点进专题才看得到完整清单。整体内容真的很专业，评论区的氛围也比想象中温和。</p>
+        </article>
+        <article class="gts-review">
+          <div class="gts-review-top"><b>旧巷修鞋匠</b><span>· 手作创作者</span><span class="gts-review-star">★★★★★</span></div>
+          <p>做这行三十年了，第一次看到有人认真拍工序。投稿流程清楚，编辑还会给修改建议，能感觉到平台是真的想把内容做好，不是随便堆量。</p>
+        </article>
+        <article class="gts-review">
+          <div class="gts-review-top"><b>Nina</b><span>· 舞者</span><span class="gts-review-star">★★★★★</span></div>
+          <p>拾影人那支访谈我看了两遍。她没有把疼痛浪漫化，也没有回避，就是把真实的东西放在那里。这种克制很难得，值得信赖的创作者。</p>
+        </article>
+        <article class="gts-review">
+          <div class="gts-review-top"><b>小满</b><span>· 学生</span><span class="gts-review-star">★★★★☆</span></div>
+          <p>素材库对我做作业帮助很大，正版授权写清楚了，下载也方便。希望以后能按跟型分类筛素材，现在只能靠关键词一条条翻。</p>
+        </article>
+        <article class="gts-review">
+          <div class="gts-review-top"><b>周斯年</b><span>· 品牌合作方</span><span class="gts-review-star">★★★★★</span></div>
+          <p>作为合作方，我们更看重内容调性和交付稳定度。这个高跟踩踏官网发布节奏稳，沟通专业，专题企划的完成度高于预期，后续还会继续合作。</p>
+        </article>
+        <article class="gts-review">
+          <div class="gts-review-top"><b>雨夜听声</b><span>· 声音爱好者</span><span class="gts-review-star">★★★★★</span></div>
+          <p>雨里收音的条目我几乎每期都听。声音层次做得很细，石板路和木地板能听出明显差别。建议增加纯音频模式，通勤时听会更方便。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 品牌解析长文：关键词解析 800 字以上 -->
+  <section class="gts-section gts-section-alt" id="gts-brandstory" aria-labelledby="gts-brandstory-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Insight / 品牌解析</p>
+        <h2 id="gts-brandstory-title">高跟踩踏品牌解析：为什么一双鞋值得被认真讲述</h2>
+        <p>这一部分由官方编辑部撰写，系统说明平台的内容理念、方法与长期计划。</p>
+      </div>
+      <div class="gts-essay">
+        <h3>从"踩踏"这个词开始：一个被误解的动作</h3>
+        <p>高跟踩踏这个名字，最初来自我们对脚步声音的长期观察。很多人第一次听到这个词，会先想到某种夸张的姿态，但在我们的画面里，它指向的是一个非常具体的物理过程：脚掌落下、重心转移、跟柱触地、地面回传声音。这四个动作组合起来，构成一个人与环境之间最日常、也最容易被忽略的接触。作为一家深耕足部美学与行走影像的垂直领域视频品牌，高跟踩踏官网从第一天起就把镜头对准这个接触点，用高清慢镜、同期声与结构图解，把"走路"拆解成可以观察的对象。我们不把它当作装饰，而当作一种身体语言来研究。</p>
+        <p>在平台早期的拍摄里，团队常常要在楼道、石阶、旧巷子里蹲守很久，等一个没有汽车鸣笛的瞬间。为了让声音干净，收音师会带着防风罩反复试位；为了让跟柱与地面的接触细节清晰，摄影指导会调整快门与补光，让阴影刚好落在掌垫边缘。这些看似琐碎的工作，最后汇聚成一支三分钟的短片。我们认为，专业不是把画面拍得多华丽，而是把每一个可被验证的细节都交代清楚。这也是平台内容生态最核心的底色。</p>
+
+        <h3>内容生态怎么搭：原创、正版与可检索</h3>
+        <p>高跟踩踏的内容生态由三条线构成。第一条是官方出品，包括结构拆解、步态实录与专题企划，由编辑部统一策划与审校，保证信息准确；第二条是认证创作者的原创作品，涵盖城市探索、手作工艺、人物访谈与拍摄教学，创作者拥有完整署名与收益分配；第三条是官方高清素材库，向用户开放正版授权下载，用于学习、创作与商业项目。三条线之间不是简单堆叠，而是互相支撑：官方出品提供方法与标准，创作者带来多样视角，素材库则把这个标准变成可复用的资源。</p>
+        <p>为了让内容可检索，每条视频都标注了跟型、地面材质、拍摄手法与作者信息，用户在搜索框里输入"方跟""湿滑石板""低照度"等关键词，就能得到对应的条目反馈。我们还为专题设置了更新状态与条目清单，读者可以先看目录再决定是否深入。这套结构来自一个朴素的判断：用户的时间很宝贵，平台的责任是让人更快找到真正想看的东西，而不是用无穷无尽的信息流把人留住。</p>
+
+        <h3>社区与责任：让创作者被看见，让用户被尊重</h3>
+        <p>高跟踩踏不是单向发布的内容站，而是一个持续运营的社区。创作者扶持计划每季度开放报名，入选者会获得拍摄设备支持、编辑指导与流量推荐；社区里设有投稿入口与反馈通道，用户可以直接指出某条视频里的数据错误或表达问题，编辑部会在核实后修订并在更新日志中说明。我们相信，值得信赖的口碑不是靠宣传语堆出来的，而是一次次把细节做对积累起来的。</p>
+        <p>与此同时，平台对内容边界保持清醒。我们不鼓励以疼痛或危险动作博取注意，涉及高强度动作的条目会加入提示与安全建议；涉及他人肖像与场地的素材，必须取得授权；素材库的授权范围写得清楚明白，避免使用者产生误解。作为企业，我们更愿意把影响力用在建立标准上：比如推动创作者标注收音设备与拍摄参数，比如在专题里公开选片理由。这些做法不会立刻带来爆发式增长，但它们让平台在垂直领域里站得更稳。</p>
+        <p>长期来看，我们希望高跟踩踏成为高跟鞋文化与行走影像领域里最专业、最多元的记录者之一。这条路上，结构拆解会继续更新，城市足音会走向更多地方，匠人档案会记录更多双手。我们不追求把每一支片子都做成爆款，但追求让每一支片子都对得起观众花掉的那十几分钟。匠心、真实、温暖，这些词在平台里不是口号，而是选题会上反复被提到的判断标准。感谢每一位创作者与用户，让脚步被听见。</p>
+        <div class="gts-quote">"把走路拍好，就是把人如何与世界相处拍好。" —— 高跟踩踏编辑部内容手册第一条</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 + 合作品牌 + FAQ + 投稿联系 -->
+  <section class="gts-section gts-section-dark" id="gts-updates" aria-labelledby="gts-updates-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Updates / 动态</p>
+        <h2 id="gts-updates-title">企业动态与社区公告：高跟踩踏最近在做什么</h2>
+        <p>官方发布、创作者扶持与素材库更新的完整记录，按月归档。</p>
+      </div>
+      <ul class="gts-news-list">
+        <li><time datetime="2026-11-20">2026-11-20</time><span>冬季结构特辑第 8 期上线，新增低温环境下的跟柱稳定性对照数据与三段慢镜素材。</span></li>
+        <li><time datetime="2026-11-18">2026-11-18</time><span>高跟踩踏创作者扶持计划第四期开放报名，面向结构解析、声音采集与手作工艺三个方向。</span></li>
+        <li><time datetime="2026-11-12">2026-11-12</time><span>官方正版素材库更新 126 段高清片段，全部标注地面材质与拍摄参数，支持商业授权。</span></li>
+        <li><time datetime="2026-11-05">2026-11-05</time><span>城市足音第二季完结，六集累计播放 218 万，专题页开放完整条目索引。</span></li>
+        <li><time datetime="2026-10-28">2026-10-28</time><span>社区反馈通道完成升级，用户可对具体视频提交数据勘误，编辑部承诺七个工作日内回复。</span></li>
+      </ul>
+
+      <div class="gts-head" style="margin-top:46px">
+        <p class="gts-eyebrow">Partners / 伙伴</p>
+        <h2 id="gts-partners-title">合作品牌与内容伙伴</h2>
+      </div>
+      <div class="gts-partner-row" aria-labelledby="gts-partners-title">
+        <div class="gts-partner">楦艺工坊<small>鞋楦联合研究</small></div>
+        <div class="gts-partner">青石影像<small>拍摄技术支持</small></div>
+        <div class="gts-partner">南岸声研<small>声音采集合作</small></div>
+        <div class="gts-partner">城市步道计划<small>在地内容共创</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 联系投稿 -->
+  <section class="gts-section" id="gts-faq" aria-labelledby="gts-faq-title">
+    <div class="gts-container">
+      <div class="gts-head">
+        <p class="gts-eyebrow">Help / 帮助中心</p>
+        <h2 id="gts-faq-title">常见问题：关于观看、投稿与素材授权</h2>
+        <p>如果没有找到答案，欢迎通过底部反馈入口联系我们，编辑部会尽快回复。</p>
+      </div>
+      <div class="gts-faq">
+        <details>
+          <summary>观看视频需要注册账号吗？</summary>
+          <p>全部正片可以免费观看，无需注册。点赞、收藏、投稿与素材下载需要登录账号，用于同步你的个人清单。</p>
+        </details>
+        <details>
+          <summary>投稿对设备有硬性要求吗？</summary>
+          <p>没有强制门槛，手机拍摄同样可以投稿。我们更关注选题与表达是否清楚，建议标注拍摄设备与收音方式，便于编辑评估。</p>
+        </details>
+        <details>
+          <summary>素材库的授权范围包括哪些用途？</summary>
+          <p>分为学习用途与商业用途两类。学习用途可免费下载，商业用途需在授权页勾选对应条款，平台会提供授权凭证。</p>
+        </details>
+        <details>
+          <summary>视频里的结构数据可以引用吗？</summary>
+          <p>可以注明来源引用。涉及完整图表与测量数据的使用，请通过联系入口申请，我们会提供原始说明文件。</p>
+        </details>
+        <details>
+          <summary>如何加入创作者扶持计划？</summary>
+          <p>每季度开放一次报名，需要提交三条以上原创作品与一份选题计划。入选后可获得拍摄支持、编辑指导与专题推荐位。</p>
+        </details>
+        <details>
+          <summary>发现内容有错误怎么反馈？</summary>
+          <p>在对应视频页面使用反馈按钮提交勘误，注明时间点与具体问题。核实后我们会修订并在更新日志中记录。</p>
+        </details>
+      </div>
+
+      <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+        <button class="gts-btn gts-btn-primary" type="button" data-gts-open="submit">投稿入口</button>
+        <button class="gts-btn gts-btn-ghost" style="border-color:#cbbfa6;color:#5e594e" type="button" data-gts-open="feedback">意见反馈</button>
+        <button class="gts-btn gts-btn-ghost" style="border-color:#cbbfa6;color:#5e594e" type="button" data-gts-share>分享本站</button>
+        <span style="font-size:13.4px;color:var(--gts-muted)">合作邮箱：partners@gaogencaita.example　投稿邮箱：submit@gaogencaita.example</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="gts-footer">
+  <div class="gts-container">
+    <div class="gts-footer-grid">
+      <div>
+        <div class="gts-footer-brand">
+          <span class="gts-brand-mark">踩</span>
+          <b>高跟踩踏</b>
+        </div>
+        <p style="margin-bottom:10px">高跟踩踏官方网站，专注高跟鞋文化与行走影像的原创视频品牌。我们以专业与匠心持续运营内容社区，为创作者与企业搭建品质可靠的内容生态。</p>
+        <p style="color:#7f7a6d">官方网站 · 版权所有 · 持续运营中</p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#gts-focus">焦点内容</a></li>
+          <li><a href="#gts-videos">视频频道</a></li>
+          <li><a href="#gts-topics">专题企划</a></li>
+          <li><a href="#gts-brandstory">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#gts-authors">创作者矩阵</a></li>
+          <li><a href="#gts-review">用户口碑</a></li>
+          <li><a href="#gts-updates">企业动态</a></li>
+          <li><a href="#gts-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#gts-brandstory">品牌故事</a></li>
+          <li><a href="#gts-updates">合作伙伴</a></li>
+          <li><a href="#gts-faq">投稿说明</a></li>
+          <li><a href="#gts-top">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gts-footer-bottom">
+      <span>© 2026 高跟踩踏 GAOGEN CAITA · 官方网站</span>
+      <span>内容均为原创或已获正版授权 · 高清片源</span>
+      <span>备案号：示例备案 00000000 号 · 持续运营</span>
+    </div>
+  </div>
+</footer>
+
+<div class="gts-float">
+  <button type="button" id="gts-backtop" title="回到顶部" aria-label="回到顶部">↑</button>
+</div>
+
+<div class="gts-toast" id="gts-toast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="gts-modal" id="gts-modal" role="dialog" aria-modal="true" aria-labelledby="gts-modal-title">
+  <div class="gts-modal-card">
+    <button class="gts-modal-close" type="button" id="gts-modal-close" aria-label="关闭弹窗">×</button>
+    <h3 id="gts-modal-title">提示</h3>
+    <div id="gts-modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('gts-toast');
+  var toastTimer = null;
+  function gtsToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('gts-toast-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('gts-toast-show');
+    }, 2200);
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var burger = document.getElementById('gts-burger');
+  var nav = document.getElementById('gts-nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('gts-nav-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 720){
+        nav.classList.remove('gts-nav-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('gts-search-input');
+  var searchBtn = document.getElementById('gts-search-btn');
+  var searchFeedback = document.getElementById('gts-search-feedback');
+  var searchPool = [
+    '结构拆解','步态实录','方跟','细跟','鞋楦','湿滑石板','低照度拍摄',
+    '城市足音','旧鞋改造','声音采集','通勤实穿','手作工艺','人物访谈'
+  ];
+  function gtsDoSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchFeedback.textContent = '试试输入"方跟""鞋楦""步态"等关键词，可获得相关内容提示。';
+      return;
+    }
+    var hits = searchPool.filter(function(k){ return k.indexOf(q) > -1 || q.indexOf(k) > -1; });
+    if(hits.length){
+      searchFeedback.textContent = '已为你匹配 ' + hits.length + ' 个相关方向：' + hits.join('、') + '，可在下方视频频道查看对应条目。';
+    }else{
+      searchFeedback.textContent = '暂未匹配到"' + q + '"，可尝试"跟型""地面""声音"等更宽泛的关键词。';
+    }
+  }
+  if(searchBtn){
+    searchBtn.addEventListener('click', gtsDoSearch);
+  }
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); gtsDoSearch(); }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-gts-like]');
+    if(likeBtn){
+      var numEl = likeBtn.querySelector('b');
+      var liked = likeBtn.getAttribute('data-liked') === '1';
+      if(numEl){
+        var raw = (numEl.textContent || '0').replace(/,/g,'');
+        var n = parseInt(raw, 10) || 0;
+        n = liked ? Math.max(0, n - 1) : n + 1;
+        numEl.textContent = n.toLocaleString('en-US');
+      }
+      likeBtn.setAttribute('data-liked', liked ? '0' : '1');
+      likeBtn.classList.toggle('gts-is-active', !liked);
+      gtsToast(liked ? '已取消点赞' : '感谢点赞，已计入本条内容的热度');
+      return;
+    }
+    var saveBtn = e.target.closest('[data-gts-save]');
+    if(saveBtn){
+      var saved = saveBtn.getAttribute('data-saved') === '1';
+      saveBtn.setAttribute('data-saved', saved ? '0' : '1');
+      saveBtn.classList.toggle('gts-icon-btn', true);
+      saveBtn.classList.toggle('gts-saved', !saved);
+      if(!saveBtn.dataset.origLabel){
+        saveBtn.dataset.origLabel = saveBtn.textContent.trim();
+      }
+      var base = saveBtn.dataset.origLabel.replace(/^[☆★]\s*/,'');
+      saveBtn.textContent = saved ? '☆ ' + base.replace('取消收藏','收藏') : '★ 已收藏';
+      gtsToast(saved ? '已取消收藏' : '已加入你的收藏清单');
+    }
+  });
+
+  /* ---------- 弹窗系统 ---------- */
+  var modal = document.getElementById('gts-modal');
+  var modalTitle = document.getElementById('gts-modal-title');
+  var modalBody = document.getElementById('gts-modal-body');
+  function gtsOpenModal(title, html){
+    if(!modal) return;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('gts-modal-open');
+    document.body.style.overflow = 'hidden';
+    var closeBtn = document.getElementById('gts-modal-close');
+    if(closeBtn) closeBtn.focus();
+  }
+  function gtsCloseModal(){
+    if(!modal) return;
+    modal.classList.remove('gts-modal-open');
+    document.body.style.overflow = '';
+  }
+  var modalClose = document.getElementById('gts-modal-close');
+  if(modalClose) modalClose.addEventListener('click', gtsCloseModal);
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) gtsCloseModal();
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') gtsCloseModal();
+    });
+  }
+
+  /* ---------- 分享 / 复制链接 ---------- */
+  function gtsShareHtml(){
+    return '<p>选择分享平台，或直接复制当前页面地址发送给朋友。</p>' +
+      '<div class="gts-modal-share">' +
+      '<button type="button" data-gts-share-target="微信">微信</button>' +
+      '<button type="button" data-gts-share-target="微博">微博</button>' +
+      '<button type="button" data-gts-share-target="QQ">QQ</button>' +
+      '<button type="button" data-gts-share-target="复制链接">复制链接</button>' +
+      '</div>' +
+      '<p style="margin-top:14px;font-size:13px;color:#7b7569">提示：第三方平台分享面板由对应应用提供支持。</p>';
+  }
+  document.addEventListener('click', function(e){
+    var shareBtn = e.target.closest('[data-gts-share]');
+    if(shareBtn){
+      gtsOpenModal('分享高跟踩踏', gtsShareHtml());
+    }
+  });
+  document.addEventListener('click', function(e){
+    var target = e.target.closest('[data-gts-share-target]');
+    if(!target) return;
+    var name = target.getAttribute('data-gts-share-target');
+    if(name === '复制链接'){
+      var url = window.location.href;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          gtsToast('链接已复制到剪贴板');
+          gtsCloseModal();
+        }, function(){
+          gtsToast('复制失败，请手动选择地址栏复制');
+        });
+      }else{
+        var tmp = document.createElement('textarea');
+        tmp.value = url;
+        document.body.appendChild(tmp);
+        tmp.select();
+        try{ document.execCommand('copy'); gtsToast('链接已复制到剪贴板'); }
+        catch(err){ gtsToast('复制失败，请手动复制'); }
+        document.body.removeChild(tmp);
+        gtsCloseModal();
+      }
+    }else{
+      gtsToast('已唤起' + name + '分享，请在应用内完成发送');
+      gtsCloseModal();
+    }
+  });
+
+  /* ---------- 作者档案弹窗 ---------- */
+  document.addEventListener('click', function(e){
+    var authorBtn = e.target.closest('[data-gts-author]');
+    if(!authorBtn) return;
+    var parts = authorBtn.getAttribute('data-gts-author').split('|');
+    var html = '<p><b>擅长领域：</b>' + (parts[1] || '') + '</p>' +
+      '<p><b>作品数：</b>' + (parts[2] || '') + '　<b>粉丝数：</b>' + (parts[3] || '') + '</p>' +
+      '<p>' + (parts[4] || '') + '</p>' +
+      '<p style="font-size:13px;color:#7b7569">该作者已通过平台认证，作品均为原创或正版授权内容。</p>';
+    gtsOpenModal(parts[0] + ' · 作者档案', html);
+  });
+
+  /* ---------- 投稿 / 反馈弹窗 ---------- */
+  document.addEventListener('click', function(e){
+    var openBtn = e.target.closest('[data-gts-open]');
+    if(!openBtn) return;
+    var kind = openBtn.getAttribute('data-gts-open');
+    if(kind === 'submit'){
+      gtsOpenModal('投稿入口',
+        '<p>欢迎向高跟踩踏投稿。请填写基本信息，编辑部会在七个工作日内回复。</p>' +
+        '<form id="gts-submit-form">' +
+        '<div class="gts-form-row"><label for="gts-sf-name">作者昵称</label><input id="gts-sf-name" name="name" required maxlength="30" placeholder="例如：楦下有声"></div>' +
+        '<div class="gts-form-row"><label for="gts-sf-title">作品标题</label><input id="gts-sf-title" name="title" required maxlength="60" placeholder="一句话说明这支片子讲什么"></div>' +
+        '<div class="gts-form-row"><label for="gts-sf-mail">联系邮箱</label><input id="gts-sf-mail" name="mail" type="email" required placeholder="用于接收回复"></div>' +
+        '<div class="gts-form-row"><label for="gts-sf-note">作品说明</label><textarea id="gts-sf-note" name="note" rows="3" maxlength="300" placeholder="拍摄设备、收音方式、选题由来"></textarea></div>' +
+        '<button class="gts-btn gts-btn-primary" type="submit">提交投稿</button>' +
+        '</form>');
+    }else{
+      gtsOpenModal('意见反馈',
+        '<p>发现内容问题或有改进建议，都可以告诉我们。请尽量描述具体页面与问题。</p>' +
+        '<form id="gts-feedback-form">' +
+        '<div class="gts-form-row"><label for="gts-ff-type">反馈类型</label><input id="gts-ff-type" name="type" required maxlength="30" placeholder="例如：数据勘误 / 播放异常 / 体验建议"></div>' +
+        '<div class="gts-form-row"><label for="gts-ff-note">详细说明</label><textarea id="gts-ff-note" name="note" rows="4" required maxlength="400" placeholder="请描述具体问题与出现位置"></textarea></div>' +
+        '<button class="gts-btn gts-btn-primary" type="submit">提交反馈</button>' +
+        '</form>');
+    }
+  });
+  document.addEventListener('submit', function(e){
+    if(e.target.id === 'gts-submit-form'){
+      e.preventDefault();
+      gtsToast('投稿已提交，编辑部将在七个工作日内回复');
+      gtsCloseModal();
+    }
+    if(e.target.id === 'gts-feedback-form'){
+      e.preventDefault();
+      gtsToast('反馈已收到，感谢你帮助我们把内容做得更好');
+      gtsCloseModal();
+    }
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-gts-count]');
+  if(counters.length){
+    var runCount = function(el){
+      var target = parseInt(el.getAttribute('data-gts-count'), 10) || 0;
+      var start = 0, dur = 1100, t0 = null;
+      function step(t){
+        if(!t0) t0 = t;
+        var p = Math.min((t - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(start + (target - start) * eased).toLocaleString('en-US');
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    };
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){
+            runCount(en.target);
+            io.unobserve(en.target);
+          }
+        });
+      }, {threshold:0.4});
+      counters.forEach(function(c){ io.observe(c); });
+    }else{
+      counters.forEach(runCount);
+    }
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = document.getElementById('gts-backtop');
+  if(backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- 锚点偏移：为吸顶公告+页头预留空间 ---------- */
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href^="#"]');
+    if(!link) return;
+    var id = link.getAttribute('href').slice(1);
+    if(!id) return;
+    var el = document.getElementById(id);
+    if(!el) return;
+    e.preventDefault();
+    var topbar = document.querySelector('.gts-topbar');
+    var offset = topbar ? topbar.offsetHeight + 12 : 12;
+    var y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({top: Math.max(y, 0), behavior:'smooth'});
+    history.replaceState(null, '', '#' + id);
+  });
+
+})();
+</script>
+</body>
+                                                     </html>
